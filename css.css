@@ -1,0 +1,120 @@
+/*Titanify - by TWBF*/
+
+/* IMPORTS */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,400';
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+h1,h2 {
+    color:#04B404;
+    text-align:center;
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5em;
+}
+
+p{
+    padding:5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    font-size: 1.75em;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color:#04B404;
+}
+
+a:hover{
+    color:#088A29;
+}
+
+nav li{
+    display:inline;
+    margin:20px;
+}
+
+form input[type="button"],form input[type="submit"] ,button{
+    border:2px solid #04B404;
+    background-color:#04B404;
+    color:#fafafa;
+}
+
+form p {
+    padding: 5px;
+    margin:0px;
+}
+
+.header{
+    width:100%;
+    height:60px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-justify-content: space-around; /* Safari */
+    justify-content: space-around;
+    -webkit-align-items: center; /* Safari */
+    align-items: center;
+}
+.intro{
+    position:absolute;
+    left:0;
+    top:35%;
+    background-color: rgba(220, 220, 220, 0.9);
+    margin-left:calc(35% - 250px);
+    margin-right:calc(35% - 250px);
+    width: calc(30% + 500px);
+    height: calc(30% + 220px);
+    -webkit-box-shadow: 0px 0px 81px 6px rgba(255,255,255,0.9);
+-moz-box-shadow: 0px 0px 81px 6px rgba(255,255,255,0.9);
+box-shadow: 0px 0px 81px 6px rgba(255,255,255,0.9);
+border-radius: 11px;
+}
+.warning{
+    font-size:1.5em;
+    text-align: center;
+    width:100%;
+    color:white;
+    background-color:red;
+}
+.main-img-container{
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:110%;
+    overflow:hidden;
+}
+.main-img{
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:calc(100% + 500px);
+}
+
+.middle{
+    z-index:5;
+    position:fixed;
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle >*{
+    background:rgba(220, 220, 220, 0.8);
+    border-radius: 7px;
+    padding:5px;
+}
